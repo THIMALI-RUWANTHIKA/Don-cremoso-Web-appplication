@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Assesment 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="web.css">
+    </head>
+    <body>
+        <section id="1">
+            <div class="circle"></div>
+            <header>
+                <a href="#" class="logo"><img src="logo.png" width="100" height="100"></a>
+                <div class="toggle"></div>
+                <ul class="navigation">
+                    <li><a href="#1">Home</a></li>
+                    <li><a href="#2">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Ice Cream<br>It's <span>Don Cremoso</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+                <div class="imgBox">
+                    <img src="ice2.png" class="don">
+                </div>
+            </div>
+
+            <ul class="thumb">
+                <li><img src="ice2.png" onclick="imgSlider('thumb2.png')"></li>
+                <li><img src="ice1.png" onclick="imgSlider('thumb1.png')" ></li>
+                <li><img src="ice3.png" onclick="imgSlider('thumb3.png')"></li>
+               
+            </ul>
+        </section>
+
+        <section id="2">
+
+                <div>
+                    <table border="0" cellpadding="20">
+                        <tr>
+                            <td><img src="ice1.png" alt="ice" width="150" height="150"></td>
+                            <td><h1>Srowberry and Vanila mix sprincle Cremoso</h1></td>
+                        </tr>
+                        <tr>
+                            <td><img src="ice2.png" alt="ice" width="150" height="150"></td>
+                            <td><h1>Chocolate and Vanila mix chocolate chips Cremoso</h1><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="ice3.png" alt="ice" width="150" height="150"></td>
+                            <td><h1>Vannila and Butterscoch Cremoso</h1><br></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="ice4.png" alt="ice" width="150" height="150"></td>
+                            <td><h1> Butterscoch and vanila Cremoso</h1><br></td>
+                        </tr>
+                    </table>
+                </div>
+            
+            
+            </div>
+        </section>
+
+        <script>
+            function imgSlider(anything){
+                document.querySelector('.don').src = anything;
+            }
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var navigation = document.querySelector('.navigation');
+            }
+        </script>
+    </body>
+</html>
